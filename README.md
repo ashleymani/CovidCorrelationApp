@@ -1,5 +1,5 @@
 # CovidCorrelationApp
-CovidCorrelationApp is a simple app used to get the correlation coefficient between percentage of people died and got vaccinated of COVID-19 for all contients.
+CovidCorrelationApp is a simple app used to get the correlation coefficient between percentage of people died and got vaccinated of COVID-19 for all continents.
 
 ## How to run the app
 1. Install java version from https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html
