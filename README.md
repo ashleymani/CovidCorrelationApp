@@ -19,5 +19,5 @@ CovidCorrelationApp is a simple app used to get the correlation coefficient betw
 - https://commons.apache.org/proper/commons-math/javadocs/api-3.3/
 
 ## What the app looks like
-
+![alt text](https://github.com/ashleymani/CovidCorrelationApp/blob/main/CovidCorrelationApp.png)
 
