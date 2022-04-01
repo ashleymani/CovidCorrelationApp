@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="utf-8">
+        <title>COVID-19 Correlation Coefficient</title>
+		<script language="JavaScript" type="text/javascript" src="./client/js/mapdata.js"></script>
+		<script language="JavaScript" type="text/javascript" src="./client/js/continentmap.js"></script>
+		<script language="JavaScript" type="text/javascript" src="./client/js/homepage.js"></script>
+		<link rel="stylesheet" href="./client/styles/homepage.css">
+		<script language="JavaScript" type="text/javascript" >
+		simplemaps_continentmap.hooks.over_state = function(id){
+			var continentName = simplemaps_continentmap_mapdata.state_specific[id].name
+			var corr = '';
+			if(document.getElementById(continentName)) {
+				if(document.getElementById(continentName).value) {
+					corr = document.getElementById(continentName).value
+				}
+			}
+			document.getElementById("cor").innerHTML="<h2> Correlation Coefficient for " + simplemaps_continentmap_mapdata.state_specific[id].name + " = "+corr+"</h2>";
+		}
+		simplemaps_continentmap.hooks.out_state = function(id){
+			document.getElementById("cor").innerHTML="";
+		}
+		  </script>
+    </head>
+	<body onload="loadData()">
+		<div>
+			<h1 style="text-align: center;">Correlation Coefficient Between Percentage of People Died and People Vaccinated of COVID-19</h1>
+			<hr>
+			<table>
+				<tr>
+					
+					<td>
+						<table id="legend" >
+							<tr>
+								<th>Absolute Magnitude of the Observed Correlation Coefficient</th>
+								<th>Interpretation</th>
+							</tr>
+							<tr>
+								<td>0.00-0.10</td>
+								<td>Negligible correlation</td>
+							</tr>
+							<tr>
+								<td>0.10-0.39</td>
+								<td>Weak correlation</td>
+							</tr>
+							<tr>
+								<td>0.40-0.69</td>
+								<td>Moderate correlation</td>
+							</tr>
+							<tr>
+								<td>0.70-0.89</td>
+								<td>Strong correlation</td>
+							</tr>
+							<tr>
+								<td>0.90-1.00</td>
+								<td>Very strong Correlation</td>
+							</tr>
+						</table>
+					</td>
+
+					<td>
+						<div id="map" style="background-color: #5D5C61;"></div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<div id="cor1"></div>
+					</td>
+					<td>
+						<div id="cor" style="text-align: left"></div>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+	<input type="hidden" id="Europe">
+	<input type="hidden" id="Asia">
+	<input type="hidden" id="Oceania">
+	<input type="hidden" id="North America">
+	<input type="hidden" id="South America">
+	<input type="hidden" id="Africa">
+</html>
+      
+    
+

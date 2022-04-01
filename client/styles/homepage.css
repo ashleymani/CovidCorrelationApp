@@ -1,0 +1,19 @@
+body {
+    background-color: #f5eec2;
+    color: #416a59;
+}
+
+#legend {
+    width: 75%;    
+    background-color: #f5eec2;
+}
+
+#legend th,#legend td {
+    border: 1px solid #39395f;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+hr {
+    width: 80%;height: 8px;margin-left: auto;margin-right: auto;background-color:#416a59;border: 0 none;margin-top: 25px;margin-bottom:50px;
+}
