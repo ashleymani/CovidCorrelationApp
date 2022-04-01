@@ -3,7 +3,7 @@ CovidCorrelationApp is a simple app used to get the correlation coefficient betw
 
 ## How to run the app
 1. Install java version from https://www.oracle.com/in/java/technologies/javase/jdk11-archive-downloads.html
-2. Set the JAVA_HOME environment varialble to point to the java bin folder
+2. Set the JAVA_HOME environment variable to point to the java bin folder
 3. Either fork or download the app and open the folder in the cli
 4. Run the backend spring boot app using 'java -jar .\target\covid-0.0.1-SNAPSHOT.jar' command. The backend application will be served at http://localhost:8080
 5. Go to the app folder and open Index.html file using your browser
